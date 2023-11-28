@@ -77,6 +77,62 @@ def special_keys(key, x, y):
 
 paused = False  
 
+# Function to handle mouse clicks
+def mouse(button, state, x, y):
+    global paused
+    if button == GLUT_LEFT_BUTTON and state == GLUT_DOWN:
+        normalized_x = (x / WINDOW_WIDTH) * 2 - 1
+        normalized_y = ((WINDOW_HEIGHT - y) / WINDOW_HEIGHT) * 2 - 1
+        
+        # Check for button clicks based on normalized coordinates
+        if -0.1 <= normalized_x <= 0.0 and 0.8 <= normalized_y <= 0.9:
+            paused = not paused
+            print("Pause clicked")
+        elif -0.7 <= normalized_x <= -0.6 and 0.8 <= normalized_y <= 0.9:
+            global diamonds, score, diamond_fall_speed, game_over
+            if not paused:
+                game_over = False
+                diamonds = []
+                score = 0
+                diamond_fall_speed = 0.0001
+                generate_diamond()
+                print("Starting Over!!")
+        elif 0.5 <= normalized_x <= 0.6 and 0.8 <= normalized_y <= 0.9:
+            glutLeaveMainLoop()
+
+# Function to close the window
+def close_window():
+    glutLeaveMainLoop()
+
+DIAMOND_SIZE = 0.03  
+diamonds = []  
+diamond_fall_speed = 0.0001  
+game_over = False
+
+# Function to generate a new diamond
+def generate_diamond():
+    global  game_over
+    if not game_over:
+        x = random.uniform(-1.0, 1.0)
+        y = 1.0 
+        diamonds.append((x, y))
+    else:
+        diamonds.clear() 
+
+# Function to update the position of diamonds
+def update_diamonds():
+    global diamond_fall_speed, game_over
+    if not paused: 
+        for i in range(len(diamonds)):
+            x, y = diamonds[i]
+            y -= diamond_fall_speed 
+            diamonds[i] = (x, y)
+            if y < -1.0:
+                diamonds.pop(i)
+                game_over = True 
+                print("Game Over!!! Score: ", score)
+                generate_diamond()  
+
 # Function to draw the diamonds
 def draw_diamonds():
     glColor3f(1.0, 1.0, 0.0)  
