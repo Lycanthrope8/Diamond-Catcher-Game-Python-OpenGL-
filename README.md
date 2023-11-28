@@ -45,6 +45,6 @@ Feel free to contribute, report issues, or suggest enhancements. Happy gaming!
 **Note:** To get the OpenGL folder with the required imports, ensure you have the PyOpenGL library installed. If you encounter any issues, visit [PyOpenGL on PyPI](https://pypi.org/project/PyOpenGL/) for detailed installation instructions.
 
 ## Find more 2D OpenGL game using Python
--[DX-BALL](https://https://github.com/Lycanthrope8/DX-Ball-Game-Python-OpenGL)
+-[DX-BALL](https://github.com/Lycanthrope8/DX-Ball-Game-Python-OpenGL)
 
 🌟 **Don't forget to follow me on GitHub for more exciting games and updates!** 🌟
