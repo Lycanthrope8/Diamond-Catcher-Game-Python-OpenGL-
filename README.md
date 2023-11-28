@@ -1,5 +1,3 @@
-Please do follow me in GitHub if this helps 
-
 # Diamond Catcher Game
 
 Welcome to the Diamond Catcher game! This simple yet addictive game challenges you to catch falling diamonds using a catcher controlled by your keyboard or mouse. The game features colorful buttons for pausing, restarting, and closing the game.
@@ -45,3 +43,6 @@ I am passionate about creating fun and engaging games. Check out my other projec
 Feel free to contribute, report issues, or suggest enhancements. Happy gaming!
 
 **Note:** To get the OpenGL folder with the required imports, ensure you have the PyOpenGL library installed. If you encounter any issues, visit [PyOpenGL on PyPI](https://pypi.org/project/PyOpenGL/) for detailed installation instructions.
+
+
+🌟 **Don't forget to follow me on GitHub for more exciting games and updates!** 🌟
