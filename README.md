@@ -7,6 +7,8 @@ Welcome to the Diamond Catcher game! This simple yet addictive game challenges y
 ### Prerequisites
 - Python installed on your system.
 - [PyOpenGL](https://pypi.org/project/PyOpenGL/) library for graphics rendering.
+  
+#Please Do follow me in GitHub if this helps 
 
 ### Installation
 1. Clone the repository to your local machine:
