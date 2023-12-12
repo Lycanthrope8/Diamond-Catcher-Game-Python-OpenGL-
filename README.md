@@ -46,5 +46,6 @@ Feel free to contribute, report issues, or suggest enhancements. Happy gaming!
 
 ## Find more 2D OpenGL game using Python
 -[DX-BALL](https://github.com/Lycanthrope8/DX-Ball-Game-Python-OpenGL)
+-[1v1-SpaceShip-Battle](https://github.com/Lycanthrope8/Space-Shooter-1v1)
 
 🌟 **Don't forget to follow me on GitHub for more exciting games and updates!** 🌟
